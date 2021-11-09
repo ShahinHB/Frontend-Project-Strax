@@ -1,0 +1,55 @@
+#author {
+    .owl-dots{
+        margin-top: 100px;
+    }
+    .owl-carousel .item {
+        background-color: white;
+        padding: 40px 30px;
+        text-align: center;
+        display: flex;
+    
+        .info {
+            width: 28%;
+            text-align: center;
+    
+            img {
+                padding: 5px;
+                width: 96px;
+                height: 96px;
+                display: inline-block;
+                border: 2px solid #f4f5fe;
+                border-radius: 5px;
+            }
+    
+            h2 {
+                margin-bottom: 0;
+                margin-top: 12px;
+                font-size: 18px;
+                font-weight: 500;
+            }
+    
+            h4 {
+                color: #13c4a1;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+        }
+        .content{
+            text-align: left;
+            width: 72%;
+            padding: 5px 21px;
+            p{
+                line-height: 1.8;
+                font-size: 15px;
+                color: #4a6f8a;
+                font-weight: 400;
+            }
+            .rating{
+                i{
+                    color: #ff612f;
+                }
+            }
+        }
+    
+    }
+}

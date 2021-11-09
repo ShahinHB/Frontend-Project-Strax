@@ -1,0 +1,36 @@
+@import "header";
+@import "home";
+@import "carousel";
+@import "footer";
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.scroll-up{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    transform: scale(0);
+    width: 40px;
+    height: 40px;
+    background-color: white;            
+    color: black;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}

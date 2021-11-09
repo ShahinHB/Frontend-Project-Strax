@@ -1,0 +1,121 @@
+$fontColor: #acc5db;
+$backgroundColor: #080a3c;
+$primary-color: #13c4a1;
+
+footer {
+    background: url("../img/footer-fade.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $backgroundColor;
+    color: $fontColor;
+    padding: 80px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+
+    // &:hover{
+    //     background: url("../img/footer-shiny.png");
+    //     background-color: $backgroundColor;
+    //     background-position: center center;
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    // }
+    h2 {
+        color: white;
+        margin-bottom: 29px;
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    .main-area {
+        .container{
+            border-bottom: 1px solid #1c2250;
+            padding-bottom: 100px;
+        }
+        .col-2{
+            a:hover{
+                padding-left: 5px;
+            }
+        }
+        .item {
+            a{
+                transition: .5s;
+            }
+            a:hover{
+                color: $primary-color;
+            }
+            >a {
+                img {
+                    margin-bottom: 15px;
+                }
+            }
+
+            P {
+                line-height: 1.8;
+                font-size: 15px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+
+                li {
+                    margin-bottom: 10px;
+
+                    span {
+                        color: white;
+                    }
+
+                    a {
+                        font-size: 15px;
+                        color: $fontColor;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .social {
+                ul {
+                    list-style-type: none;
+                    display: flex;
+
+                    li a {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        background-color: #4e6e8a;
+                        text-align: center;
+                        border-radius: 2px;
+                        color: black;
+                        margin-right: 10px;
+                        transition: .3s;
+                        &:hover{
+                            background-color: white;
+                        }
+                        i {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        p{
+            color: $fontColor;
+            font-size: 15px;
+
+            a{
+                color: #ff612f;
+                text-decoration: none;
+                font-size: 15px;
+            }
+        }
+    }
+
+}
