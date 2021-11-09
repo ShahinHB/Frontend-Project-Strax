@@ -23,6 +23,31 @@ $(document).ready(function () {
             }
         }
     });
+    $("#signs .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 60,
+        nav: true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        responsive: {
+            1000: {
+                items: 4
+            }
+        }
+    });
+
+    $("#feedbacks .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 100,
+        nav: true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        responsive: {
+            1000: {
+                items: 2
+            }
+        }
+    });
     // setTimeout(function(){
     //     odometer.innerHTML = 800;
     // });
@@ -51,13 +76,13 @@ $(document).ready(function () {
             "opacity": "1"
         })
     });
-    window.addEventListener('scroll', function(e){
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.getElementsByClassName('scroll-up')[0].style.transform = "scale(1)"
-        }
-        else{
-            document.getElementsByClassName('scroll-up')[0].style.transform = "scale(0)"
-        }
-    })
+    // window.addEventListener('scroll', function(e){
+    //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    //         document.getElementsByClassName('scroll-up')[0].style.transform = "scale(1)"
+    //     }
+    //     else{
+    //         document.getElementsByClassName('scroll-up')[0].style.transform = "scale(0)"
+    //     }
+    // })
     
 });
