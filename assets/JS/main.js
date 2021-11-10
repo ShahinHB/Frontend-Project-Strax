@@ -48,6 +48,10 @@ $(document).ready(function () {
             }
         }
     });
+
+    $(".responsive-header-menu ul .nav i").click(function (e) { 
+        document.querySelector(".responsive-navbar").classList.toggle("show-navbar");
+    });
     // setTimeout(function(){
     //     odometer.innerHTML = 800;
     // });

@@ -1,39 +1,42 @@
 header {
     width: 100%;
     font-family: poppins, sans-serif;
-    .default-header-menu{
+
+    .default-header-menu {
         padding: 30px 60px;
         width: 100%;
+
         .col-7 {
-            
+
             ul {
                 padding: 10px 0px;
                 list-style-type: none;
                 display: flex;
                 font-weight: 500;
                 justify-content: right;
+
                 li:first-child {
                     a {
                         color: $primary-color;
                     }
                 }
-    
+
                 li {
                     margin-right: 26px;
                     font-size: 15px;
                     color: $font-color;
-    
+
                     &:hover a {
                         color: $primary-color;
                     }
-    
+
                     a {
                         display: flex;
                         align-items: center;
                         color: $font-color;
                         text-decoration: none;
                         transition: all 0.3s ease-in-out;
-    
+
                         i {
                             font-size: 12px;
                             margin-left: 5px;
@@ -42,7 +45,7 @@ header {
                 }
             }
         }
-    
+
         .col-3 {
             .register {
                 color: white;
@@ -55,7 +58,7 @@ header {
                 font-size: 15px;
                 margin-left: -15px;
             }
-    
+
             .login {
                 border: 1px solid black;
                 color: white;
@@ -67,10 +70,62 @@ header {
                 font-size: 15px;
                 color: black;
                 margin-left: 20px;
-                i{
+
+                i {
                     color: $third-color;
                 }
             }
         }
     }
+
+    .responsive-header-menu {
+        display: none;
+
+        .container {
+            position: relative;
+
+            .row {
+                .col-6 {
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        justify-content: right;
+
+                        li {
+                            font-size: 35px;
+                            margin-right: 15px;
+                            cursor: pointer;
+
+                            &:first-child {
+                                position: relative;
+                                bottom: 5px;
+                            }
+                        }
+
+                    }
+
+                }
+
+                .responsive-navbar {
+                    position: absolute;
+                    top: 68px;
+                    z-index: 9999;
+                    visibility: hidden;
+                    ul {
+                        list-style: none;
+
+                        li {
+                            background-color: white;
+                            border-top: 1px solid #13c4a1;
+                            padding: 1em 5% 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.show-navbar {
+    visibility: visible !important;
 }
