@@ -816,6 +816,7 @@ $secondaryfontColor: #080a3c;
             .row {
                 .col-3 {
                     .item {
+                        margin-bottom: 30px;
                         .image {
                             position: relative;
                             padding: 10px;
@@ -935,7 +936,7 @@ $secondaryfontColor: #080a3c;
                         }
                     }
 
-                    &:last-child {
+                    &:nth-child(4) {
                         .image {
                             border-color: #ffdacf;
                         }
@@ -947,6 +948,66 @@ $secondaryfontColor: #080a3c;
                         &:hover {
                             .image {
                                 border-color: #fc4c86;
+                            }
+                        }
+                    }
+                    &:nth-child(5) {
+                        .image {
+                            border-color: #b2b3c3;
+                        }
+
+                        h4 {
+                            color: $secondaryfontColor;
+                        }
+
+                        &:hover {
+                            .image {
+                                border-color: $secondaryfontColor;
+                            }
+                        }
+                    }
+                    &:nth-child(6) {
+                        .image {
+                            border-color: #ffdacf;
+                        }
+
+                        h4 {
+                            color: #fc4c86;
+                        }
+
+                        &:hover {
+                            .image {
+                                border-color: #fc4c86;
+                            }
+                        }
+                    }
+                    &:nth-child(7) {
+                        .image {
+                            border-color: #ffdacf;
+                        }
+
+                        h4 {
+                            color: #ff612f;
+                        }
+
+                        &:hover {
+                            .image {
+                                border-color: #ff612f;
+                            }
+                        }
+                    }
+                    &:nth-child(8) {
+                        .image {
+                            border-color: #bce9e5;
+                        }
+
+                        h4 {
+                            color: $primary-color;
+                        }
+
+                        &:hover {
+                            .image {
+                                border-color: $primary-color;
                             }
                         }
                     }
@@ -994,7 +1055,6 @@ $secondaryfontColor: #080a3c;
     }
 
     #news {
-        padding-bottom: 320px;
         background-color: white;
 
         .title {
@@ -1129,7 +1189,8 @@ $secondaryfontColor: #080a3c;
         #subscribe-area {
             position: relative;
             top: -163px;
-
+            left: 15px;
+            margin-top: 100px;
 
             .container {
                 .row {

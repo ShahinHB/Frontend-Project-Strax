@@ -1,0 +1,127 @@
+#login-area {
+    padding: 0px;
+
+    .container-fluid {
+        .row {
+            .col-6 {
+                padding: 0px;
+
+                &:first-child {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &:last-child {
+                    text-align: center;
+                    padding: 70px 0px;
+
+                    img {
+                        margin-bottom: 35px;
+                    }
+
+                    h3 {
+                        font-size: 40px;
+                        font-weight: 500;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    p {
+                        margin-top: 7px;
+                        font-size: 15px;
+                        color: $font-color;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    form {
+                        text-align: center;
+                        max-width: 500px;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        input {
+                            background-color: white;
+                            color: $secondaryfontColor;
+                            border: none;
+                            transition: .5s;
+                            box-shadow: 0 5px 28.5px 1.5px rgba(149, 152, 200, .2);
+                            height: 55px;
+                            font-size: 14px;
+                            margin-bottom: 15px;
+                        }
+
+                        >button {
+                            display: block;
+                            width: 100%;
+                            border: none;
+                            position: relative;
+                            text-align: center;
+                            overflow: hidden;
+                            z-index: 1;
+                            background-color: $third-color;
+                            color: white;
+                            transition: .5s;
+                            border-radius: 5px;
+                            font-weight: 500;
+                            font-size: 15px;
+                            padding-right: 25px;
+                            padding-top: 13px;
+                            padding-bottom: 13px;
+
+                            i {
+                                text-align: left;
+                                position: absolute;
+                                left: 25px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                font-size: 20px;
+                                color: $secondaryfontColor;
+                            }
+                        }
+
+                        >a {
+                            display: block;
+                            text-align: right;
+                            color: $primary-color;
+                            margin-top: 15px;
+                        }
+
+                        .social {
+                            button {
+                                margin-top: 15px;
+                                display: block;
+                                width: 100%;
+                                position: relative;
+                                background-color: transparent;
+                                -webkit-transition: .5s;
+                                transition: .5s;
+                                padding: 11px 30px;
+                                border-radius: 2px;
+                                font-weight: 500;
+                                &:first-child{
+                                    border: 1px solid #3b5998;
+                                    color: #3b5998;
+                                    &:hover{
+                                        background-color: #3b5998;
+                                        color: white;
+                                    }
+                                }
+                                &:last-child{
+                                    margin-top: 10px;
+                                    border: 1px solid #ea4335;
+                                    color: #ea4335;
+                                    &:hover{
+                                        background-color: #ea4335;
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

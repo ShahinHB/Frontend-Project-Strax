@@ -48,6 +48,7 @@ header {
 
         .col-3 {
             .register {
+                display: inline-block;
                 color: white;
                 background-color: $primary-color;
                 text-decoration: none;
@@ -60,6 +61,7 @@ header {
             }
 
             .login {
+                display: inline-block;
                 border: 1px solid black;
                 color: white;
                 text-decoration: none;
