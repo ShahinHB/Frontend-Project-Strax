@@ -3,15 +3,38 @@ $footerBackgroundColor: #080a3c;
 $primary-color: #13c4a1;
 
 footer {
-    background: url("../img/footer-fade.png");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: $footerBackgroundColor;
-    color: $footerFontColor;
-    padding: 80px 0 0 0;
-    font-family: 'Poppins', sans-serif;
-    transition: .5s;
+    background-color: #080a3c;
+    position: relative;
+    z-index: 1;
+    padding-top: 80px;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        animation: imageChange 1s linear 1s infinite;
+        background-image: url(../img/footer-shiny.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        animation: imageChangeTwo 1s linear 1s infinite;
+        background-image: url(../img/footer-fade.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
     // &:hover{
     //     background: url("../img/footer-shiny.png");
@@ -31,6 +54,11 @@ footer {
         .container{
             border-bottom: 1px solid #1c2250;
             padding-bottom: 100px;
+        }
+        .col-4{
+            p{
+                color: $footerFontColor;
+            }
         }
         .col-2{
             a:hover{
@@ -119,3 +147,27 @@ footer {
     }
 
 }
+@keyframes imageChange {
+    0% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes imageChangeTwo {
+    0% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

@@ -80,6 +80,13 @@ $(document).ready(function () {
             "opacity": "1"
         })
     });
+    function myFunction() {
+        setTimeout(function(){ 
+            // document.getElementsByTagName("footer")[0].style.background= "url(../img/footer-shiny.png)"
+          
+        }, 3000);
+      }
+      myFunction()
     // window.addEventListener('scroll', function(e){
     //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     //         document.getElementsByClassName('scroll-up')[0].style.transform = "scale(1)"

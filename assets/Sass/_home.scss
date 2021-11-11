@@ -692,6 +692,12 @@ $secondaryfontColor: #080a3c;
 
                     .row {
                         .col-4 {
+                            &:first-child a{
+                                background-color: $secondaryfontColor!important;
+                            }
+                            &:nth-child(2) a{
+                                background-color: $third-color!important;
+                            }
                             .item {
                                 padding: 0px;
                                 background-color: white;
@@ -845,6 +851,11 @@ $secondaryfontColor: #080a3c;
                                     list-style-type: none;
                                     display: flex;
 
+                                    li{
+                                        &:nth-child(2) {
+                                            transition-delay: 2s;
+                                        }
+                                    }
                                     li a {
                                         display: block;
                                         width: 30px;
@@ -856,7 +867,7 @@ $secondaryfontColor: #080a3c;
                                         color: #080a3c;
                                         margin-right: 10px;
                                         transition: .3s;
-
+                                        
                                         &:hover {
                                             background-color: $third-color;
                                             color: white;
@@ -1191,7 +1202,31 @@ $secondaryfontColor: #080a3c;
             top: -163px;
             left: 15px;
             margin-top: 100px;
-
+            .shape-17{
+                left: 5%;
+                top: 0;
+                z-index: -1;
+            }
+            .shape-18{
+                right: 2%;
+                top: 4%;
+                z-index: -1;
+            }
+            .shape-19{
+                z-index: -1;
+                right: 20%;
+                top: 32%;
+            }
+            .shape-20{
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+            .shape-21{
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
             .container {
                 .row {
                     .col-12 {
@@ -1248,6 +1283,18 @@ $secondaryfontColor: #080a3c;
                                             width: 100%;
                                             font-size: 15px;
                                             font-weight: 500;
+                                            i{
+                                                color: $third-color;
+                                                margin-right: 4px;
+                                                transition: .5s;
+                                            }
+                                            &:hover{
+                                                color: white;
+                                                background-color: $primary-color;
+                                                i{
+                                                    color: $secondaryfontColor;
+                                                }
+                                            }
                                         }
                                     }
                                 }
