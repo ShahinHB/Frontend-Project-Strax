@@ -6,7 +6,7 @@ $(document).ready(function () {
         autoplay:true,
         autoplayTimeout:5000,
         responsive: {
-            1000: {
+            992: {
                 items: 1
             }
         }
@@ -18,6 +18,9 @@ $(document).ready(function () {
         autoplay:true,
         autoplayTimeout:5000,
         responsive: {
+            0:{
+                items:1,
+                },
             1000: {
                 items: 2
             }
@@ -47,6 +50,11 @@ $(document).ready(function () {
                 items: 2
             }
         }
+    });
+
+
+    $(".responsive-header-menu ul .buttons i").click(function (e) { 
+        document.querySelector(".dropdown-action").classList.toggle("show-navbar");
     });
 
     $(".responsive-header-menu ul .nav i").click(function (e) { 

@@ -13,8 +13,13 @@ header {
     .home-header-menu {
         padding: 30px 60px;
         width: 100%;
-
+        position: relative;
+        z-index: 99999999999999999999;
+        .col-1{
+            padding: 0px;
+        }
         .col-7 {
+            padding-left: 45px;
             >ul {
                 padding: 10px 0px;
                 list-style-type: none;
@@ -89,7 +94,9 @@ header {
             }
         }
 
-        .col-3 {
+        .col-4 {
+            padding: 0px;
+            text-align: right;
             .register {
                 position: relative;
                 z-index: 101;
@@ -156,7 +163,7 @@ header {
             }
 
             .shape-2 {
-                bottom: -25px;
+                bottom: -45px;
                 right: -170px;
                 z-index: 99;
                 animation: move-2 7s linear infinite;

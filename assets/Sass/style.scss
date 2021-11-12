@@ -8,12 +8,16 @@
 @import "single-service";
 @import "log-in";
 @import "contact";
+@import "responsive";
 
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     font-family: poppins, sans-serif;
+}
+html{
+    overflow-x: hidden;
 }
 .animation{
     position: absolute;

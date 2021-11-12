@@ -1,0 +1,152 @@
+@media (max-width: 576px) {
+    .responsive-header-menu {
+        display: block !important;
+    }
+
+    .default-header-menu {
+        display: none;
+    }
+
+    .home-header-menu {
+        display: none;
+    }
+
+    header .container-fluid .col-6:last-child{
+        display: none;
+    }
+
+    .col-xs-1{
+        width: 8.33333333%;
+    }
+    .col-xs-2{
+        width: 16.66666666%;
+    }
+    .col-xs-3{
+        width: 25%;
+    }
+    .col-xs-4{
+        width: 33.33333333%;
+    }
+    .col-xs-5{
+        width: 41.66666666%;
+    }
+    .col-xs-6{
+        width: 50%;
+    }
+    .col-xs-7{
+        width: 58.33333333%;        
+    }   
+    .col-xs-8{
+        width: 66.66666666%;
+    }
+    .col-xs-9{
+        width: 75%;
+    }
+    .col-xs-10{
+        width: 83.33333333%;
+    }
+    .col-xs-11{
+        width: 91.66666666%;
+    }
+    .col-xs-12{
+        width: 100%;
+    }
+    .animation{
+        display: none;
+    }
+    #team .social a{
+        width: 35px !important;
+        height: 35px !important;
+        line-height: 37px !important;
+        i{
+            font-size: 20px !important;
+        }
+    }
+    #loving-clients .design{
+        width: 50% !important;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    #loving-clients .design{
+        width: 33.33333333% !important;
+    }
+    .animation{
+        display: none;
+    }
+    .responsive-header-menu {
+        display: block !important;
+    }
+
+    .default-header-menu {
+        display: none;
+    }
+
+    .home-header-menu {
+        display: none;
+    }
+
+    header .container-fluid .col-6:last-child{
+        display: none;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #loving-clients .design{
+        width: 20% !important;
+    }
+    .responsive-header-menu {
+        display: none !important;
+    }
+
+    .default-header-menu {
+        display: none !important;
+    }
+
+    .home-header-menu {
+        display: block !important;
+    }
+
+    header .container-fluid .col-6:last-child{
+        display: block !important;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #loving-clients .design{
+        width: 20% !important;
+    }
+    .home-header-menu{
+        background-color: white !important;
+        .col-3{
+            text-align: right;
+        }
+    }
+    header .login{
+        display: none !important;   
+    }
+    
+}
+@media (min-width: 1200px) and (max-width: 1240px) {
+    .home-header-menu{
+        .col-3{
+            .login{
+                margin-left: 0px !important;
+            }
+        }
+    }
+    
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .animation{
+        display: block !important;
+    }
+}
