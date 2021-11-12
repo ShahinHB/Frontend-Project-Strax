@@ -96,7 +96,9 @@ $secondaryBackgroundColor: #f4f5fe;
 
 #signs {
     background-color: $backgroundColor;
-
+    .owl-dots{
+        display: none !important;
+    }
     .container {
         .row {
             .col-3 {
@@ -256,7 +258,6 @@ $secondaryBackgroundColor: #f4f5fe;
 
     .shape-8 {
         position: absolute;
-        display: inline;
         left: 10%;
         bottom: 50%;
         animation: rotating 20s linear infinite;

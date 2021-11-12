@@ -65,6 +65,13 @@
     #loving-clients .design{
         width: 50% !important;
     }
+    #details{
+        .client{
+            .info{
+                width: 100% !important;
+            }
+        }
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -90,10 +97,25 @@
     header .container-fluid .col-6:last-child{
         display: none;
     }
+    #details{
+        .client{
+            .info{
+                width: 50% !important;
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    #details{
+        .client{
+            .info{
+                width: 33.333333% !important;
+            }
+        }
+    }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
@@ -105,7 +127,7 @@
     }
 
     .default-header-menu {
-        display: none !important;
+        display: block !important;
     }
 
     .home-header-menu {
@@ -115,7 +137,13 @@
     header .container-fluid .col-6:last-child{
         display: block !important;
     }
-    
+    #details{
+        .client{
+            .info{
+                width: 20% !important;
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -148,5 +176,16 @@
 @media (min-width: 1200px) {
     .animation{
         display: block !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #about-contact{
+        padding: 0 !important;
+    }    
+    #contact-area{
+        .col-6:first-child{
+            border: none !important;
+        }
     }
 }
