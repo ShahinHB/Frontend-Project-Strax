@@ -171,6 +171,24 @@
     }
     
 }
+@media (min-width: 1200px) and (max-width: 1330px) {
+    .default-header-menu{
+        .col-3{
+            .login{
+                margin-left: 0px !important;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1254px) {
+    .default-header-menu{
+        .col-3{
+            .login{
+                display: none !important;
+            }
+        }
+    }
+}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {

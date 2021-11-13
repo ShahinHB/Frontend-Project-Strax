@@ -28,14 +28,13 @@ $secondaryBackgroundColor: #f4f5fe;
         animation: animatedBackgroundPageTitle 15s linear infinite;
 
         @keyframes animatedBackgroundPageTitle {
-            from {
-                transform: translateX(0);
+            0% {
+              background-position: center center;
             }
-
-            to {
-                transform: translateX(500);
+            100% {
+              background-position: 300px center;
             }
-        }
+          }
 
     }
 

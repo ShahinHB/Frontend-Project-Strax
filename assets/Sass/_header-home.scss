@@ -15,6 +15,7 @@ header {
         width: 100%;
         position: relative;
         z-index: 99999999999999999999;
+        transition: .5s;
         .col-1{
             padding: 0px;
         }
@@ -98,29 +99,24 @@ header {
             padding: 0px;
             text-align: right;
             .register {
-                position: relative;
-                z-index: 101;
                 display: inline-block;
-                color: white;
+                color: white !important;
                 background-color: $primary-color;
                 text-decoration: none;
                 padding: 13px 25px;
-                transition: all 0.5s ease-in-out;
                 border-radius: 5px;
                 font-weight: 500;
                 font-size: 15px;
                 margin-left: -15px;
+                
             }
 
             .login {
-                position: relative;
-                z-index: 101;
                 display: inline-block;
                 border: 1px solid white;
                 color: white;
                 text-decoration: none;
                 padding: 13px 30px;
-                transition: all 0.5s ease-in-out;
                 border-radius: 5px;
                 font-weight: 500;
                 font-size: 15px;
@@ -297,7 +293,7 @@ header {
                 display: inline-block;
                 margin-bottom: 35px;
                 color: white;
-                background-color: $primary-color;
+                background-color: $secondary-color;
                 text-decoration: none;
                 padding: 13px 25px;
                 transition: all 0.5s ease-in-out;

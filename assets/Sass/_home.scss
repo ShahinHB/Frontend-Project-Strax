@@ -459,7 +459,7 @@ $secondaryfontColor: #080a3c;
 
                 .shape-12 {
                     width: unset;
-                    top: 40%;
+                    top: 25%;
                     transform: translateY(-40%);
                     left: 3%;
                     z-index: -1;
@@ -560,12 +560,15 @@ $secondaryfontColor: #080a3c;
                                 }
 
                                 .counter {
-                                    .odometer {
-                                        color: #ff612f;
+                                    font-size: 26px;
+                                    font-weight: 700;
+                                    color: #ff612f;
+                                    #odometer {
+                                        color: #ff612f !important;
                                         font-size: 30px;
                                         font-weight: 600;
                                         padding: 0px;
-
+                                        margin-right: 10px;
                                         .odometer-digit {
                                             background-color: white;
                                             color: black;
@@ -1402,4 +1405,8 @@ $secondaryfontColor: #080a3c;
                 }
             }
         }
+    }
+
+    #video-presentation .container .row .col-12 .facts .col-3 .item .counter #odometer .odometer-digit{
+        color: $third-color !important
     }
