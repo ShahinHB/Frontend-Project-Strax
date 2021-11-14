@@ -152,6 +152,9 @@ $(document).ready(function () {
     let monthlyButton = document.querySelectorAll("#plans .choosing-area button")[0]
     let yearlyButton = document.querySelectorAll("#plans .choosing-area button")[1]
 
+
+
+
     $(monthlyButton).click(function (e) {
         $("#plans .choosing-area button").removeClass("active");
         $(this).addClass("active");
@@ -177,6 +180,10 @@ $(document).ready(function () {
             "padding": "0 15px"
         })
     });
+
+
+
+
 
     window.addEventListener('scroll', function (e) {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -213,7 +220,14 @@ $(document).ready(function () {
 
 
 
-
+    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
 
 
 

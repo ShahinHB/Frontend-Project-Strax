@@ -512,16 +512,17 @@ $secondaryfontColor: #080a3c;
                             width: 100%;
                         }
 
+                        
                         .play-button {
                             position: absolute;
-                            top: 46%;
+                            top: 42%;
                             text-align: center;
                             background-color: black;
                             padding: 25px 30px;
                             background-color: $third-color;
                             transition: all 0.5s ease-in-out;
                             border-radius: 5px;
-
+                            
                             i {
                                 font-size: 30px;
                                 color: white;
@@ -1410,3 +1411,18 @@ $secondaryfontColor: #080a3c;
     #video-presentation .container .row .col-12 .facts .col-3 .item .counter #odometer .odometer-digit{
         color: $third-color !important
     }
+
+
+
+
+iframe{
+    z-index: 99999999999999999999;
+}
+
+.mfp-bg{
+    z-index: 99999999999999999999999999999999;
+}
+.mfp-wrap, .mfp-close-btn-in, .mfp-auto-cursor, .mfp-fade, .mfp-ready{
+    position: relative;
+    z-index: 9999999999999999999999999999999999999999999;
+}
