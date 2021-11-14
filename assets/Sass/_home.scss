@@ -470,7 +470,7 @@ $secondaryfontColor: #080a3c;
                 .shape-13 {
                     width: unset;
                     right: 3%;
-                    top: 30%;
+                    top: 25%;
                     z-index: -1;
                     transform: translateY(-40%);
                     animation: rotating 20s linear infinite;
@@ -505,13 +505,12 @@ $secondaryfontColor: #080a3c;
                         max-width: 100%;
                         text-align: center;
                         vertical-align: middle;
-                        justify-content: space-around;
+                        justify-content: center;
                         margin-bottom: 50px;
 
                         img {
                             width: 100%;
                         }
-
                         
                         .play-button {
                             position: absolute;

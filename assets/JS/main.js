@@ -218,17 +218,33 @@ $(document).ready(function () {
         })
     })
 
+//   var $head = $("iframe").contents().find("head"); 
+//   var url = "assets/css/style.min.css";
+//   $head.append($("<link/>", { rel: "stylesheet", href: url, type: "text/css" } ));
 
 
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false
-	});
 
+$('.play-button').magnificPopup({
+    disableOn: 320,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false,
+
+});
+
+$.extend(true, $.magnificPopup.defaults, {  
+    iframe: {
+        patterns: {
+           youtube: {
+              index: 'youtube.com/', 
+              id: 'v=', 
+              src: 'http://www.youtube.com/embed/%id%?autoplay=1' 
+          }
+        }
+    }
+});
 
 
 });
