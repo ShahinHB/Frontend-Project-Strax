@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="assets/css/odometer-theme-car.css"> -->
+    <link rel="stylesheet" href="assets/css/odometer-theme-car.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
@@ -244,7 +244,7 @@
                                 <div class="col-3 col-lg-3 col-sm-6 col-xs-6">
                                     <div class="item" style="border: none;">
                                         <div class="counter">
-                                            <span id="odometer" class="download">122</span>k
+                                            <span id="odometer" class="fact-download">122</span>k
                                         </div>
                                         <p>Downloaded</p>
                                     </div>
@@ -252,7 +252,7 @@
                                 <div class="col-3 col-lg-3 col-sm-6 col-xs-6">
                                     <div class="item" style="border: none;">
                                         <div class="counter">
-                                            <span id="odometer" class="odometer">20</span>k
+                                            <span id="odometer" class="fact-feedback">20</span>k
                                         </div>
                                         <p>Feedback</p>
                                     </div>
@@ -260,7 +260,7 @@
                                 <div class="col-3 col-lg-3 col-sm-6 col-xs-6">
                                     <div class="item" style="border: none;">
                                         <div class="counter">
-                                            <span id="odometer" class="odometer">500</span>+
+                                            <span id="odometer" class="fact-worker">500</span>+
                                         </div>
                                         <p>Workers</p>
                                     </div>
@@ -268,7 +268,7 @@
                                 <div class="col-3 col-lg-3 col-sm-6 col-xs-6">
                                     <div class="item" style="border: none;">
                                         <div class="counter">
-                                            <span id="odometer" class="odometer">70</span>+
+                                            <span id="odometer" class="fact-contributor">70</span>+
                                         </div>
                                         <p>Contributors</p>
                                     </div>
@@ -717,10 +717,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-        AOS.init({ disable: 'mobile' });
     </script>
     <script src="assets/JS/owl.carousel.min.js"></script>
-    <!-- <script src="assets/JS/odometer.min.js"></script> -->
+    <script src="assets/JS/odometer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
         integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -728,7 +727,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
         integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        <script>
+            $(document).ready(function () {
+                var offset = $(".facts").offset();
+                var top = offset.top;
+    
+                window.addEventListener('scroll', function (e) {
+                    if (document.body.scrollTop > top - 500 || document.documentElement.scrollTop > top - 500) {
+                        const download = document.querySelector(".fact-download");
+                        const feedback = document.querySelector(".fact-feedback");
+                        const worker = document.querySelector(".fact-worker");
+                        const contributor = document.querySelector(".fact-contributor");
+    
+                        const down = new Odometer({
+                            el: download,
+                        })
+                        const feed = new Odometer({
+                            el: feedback,
+                        })
+                        const work = new Odometer({
+                            el: worker,
+                        })
+                        const cont = new Odometer({
+                            el: contributor,
+                        })
+    
+    
+                        download.innerHTML = 122
+                        feedback.innerHTML = 20
+                        worker.innerHTML = 500
+                        contributor.innerHTML = 70
+    
+    
+                    }
+    
+                })
+            });
+    
+    
+        </script>
     <!-- MyJs -->
     <script src="assets/JS/main.js"></script>
 </body>

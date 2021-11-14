@@ -144,6 +144,8 @@ $(document).ready(function () {
             clients.innerHTML = 850;
             onprojects.innerHTML = 120;
             winning.innerHTML = 50;
+
+            
         }
 
     })
@@ -152,7 +154,7 @@ $(document).ready(function () {
     let monthlyButton = document.querySelectorAll("#plans .choosing-area button")[0]
     let yearlyButton = document.querySelectorAll("#plans .choosing-area button")[1]
 
-
+    
 
 
     $(monthlyButton).click(function (e) {
